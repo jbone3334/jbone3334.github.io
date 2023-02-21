@@ -1,0 +1,155 @@
+/* Default styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #f3f3f3;
+	background: eaf8fb;
+}
+
+header {
+   background-color: #333;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	color: fff;
+	background-image:url(images/headerbkgd.png);
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+    padding: 45px 15px 15px;
+	margin: 0 auto;
+	min-height: 130px;
+	width: 870px;
+	
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+	margin:0 3px 5px;
+}
+li {
+	display:inline-block;
+}
+
+
+
+
+nav li a{
+	background: #4a4a4a;
+	color: #fff;
+	-moz-border-radius: 2px;
+	webkit-border-radius:2px;
+	border-radius:2px;
+	border:1px solid #595959;
+	padding:3px 10px;
+	text-decoration: none;
+    margin: 0.5em 0;
+	display: inline-block;
+}
+nav li a:hover{
+	background-color: #000
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 1em; 
+	background-color: #eaf8fb;
+	color:#445e64
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+.float-left {
+    float: left;
+  
+
+}
+
+aside {
+    background-color: #eaf8fb;
+    padding: 1em;
+	color:#445e64
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    margin-bottom: 0.5em;
+}
+
+aside a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+    nav li {
+        margin: 0.5em 0;
+    }
+	.nav {
+  		text-align: center;
+
+}
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    .float-left {
+        float: none;
+        margin-right: 0;
+   
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+/* Responsive styles for medium screens */
+@media (min-width: 601px) and (max-width: 800px) {
+    section h1 {
+        font-size: 2em;
+    }
+	
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    aside {
+        max-width: 100%;
+	}
