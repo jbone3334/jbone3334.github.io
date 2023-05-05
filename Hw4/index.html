@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PWA</title>
+	 <link href="../../Dashboard V2/styles.css" rel="stylesheet" type="text/css">
+  <link rel="manifest" href="../../Dashboard V2/manifest.webmanifest">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(registration => console.log('Service Worker registered'))
+          .catch(error => console.log('Service Worker registration failed:', error));
+      });
+    }
+  </script>
+</head>
+<body>
+	<h1>Progressive Web Applications</h1>
+	<div class="container">
+		<p>A Progressive Web Applications (PWA) combine the best features of both web and native apps to offer users a seamless experience:</p>
+		<ul>
+			<li>PWAs are designed to work with minimal internet connectivity.</li>
+			<li>They load quickly and respond to user interactions with minimal delay.</li>
+			<li>They work across all devices</li>
+			<li>Because they use https, they're secure</li>
+		</ul>
+		
+		<p>Select background:</p>
+		<select id="background-select">
+			<option value="white" selected disabled>White</option>
+			<option value="lightblue">Light Blue</option>
+			<option value="lightgold">Light Gold</option>
+		</select>
+		
+		<script>
+			const backgroundSelect = document.getElementById("background-select");
+			backgroundSelect.addEventListener("change", () => {
+				const selectedValue = backgroundSelect.value;
+				const imageUrl = `${selectedValue}.jpg`;
+				document.body.style.backgroundImage = `url('images/${imageUrl}')`;
+			});
+		</script>
+	</div>
+</body>
+</html>

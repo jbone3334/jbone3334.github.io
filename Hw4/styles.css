@@ -1,0 +1,14 @@
+	body {
+			background-color: #EA1A1E; /* default background color */
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		.container {
+			margin: 50px;
+			padding: 20px;
+			border: 1px solid #ddd;
+		}
